@@ -5,16 +5,11 @@ spring:
       max-request-size: 5000MB
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/spotify
-    username: root
-    password: "012402"
     hikari:
       pool-name: HikariCP
 
 spotify:
   client:
-    id: 44598900a98b417a9b92cea35b4cb5fd
-    secret: 1e39c8ced6e249eab5f2cf93e366cb92
   redirect:
     uri: http://localhost:4000/auth/callback
 
